@@ -1,12 +1,19 @@
 package com.sample.model;
 
+import org.kie.api.definition.type.ClassReactive;
+
+@ClassReactive
 public class Message {
 
     public static final int HELLO = 0;
     public static final int GOODBYE = 1;
 
     private String message;
-    private int status;
+	private int status;
+	
+	public Message() {
+	}	
+
 	public Message(String message, int status) {
 		this.message = message;
 		this.status = status;
@@ -27,6 +34,5 @@ public class Message {
 	public String toString() {
 		return "Message [message=" + message + ", status=" + status + "]";
 	}
-
     
 }

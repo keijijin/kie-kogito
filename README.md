@@ -49,7 +49,8 @@ public class MessageRuntimeResource {
 
 **これだけ。**
 
-_期待していたupdate(m);は効いていないみたい。_
+~~期待していたupdate(m);は効いていないみたい。~~
+Messageクラスに、@ClassReactiveアノテーションを付けると、update(m);は有効になる。
 
 ***
 
